@@ -1,0 +1,144 @@
+:root {
+  --highlight-color: rgb(100, 115, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom left, red, blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: min(calc(100% - 40px), 700px);
+  height: min(calc(100% - 40px), 1000px);
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#progressBox {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#progressBox>div {
+  width: calc(100% - 80px);
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+#progressBox>div a {
+  z-index: 100;
+  font-size: 35px;
+  background-color: white;
+  padding-inline: 11px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+}
+#progressBox>div a:nth-of-type(1) {
+  left: 20px;
+}
+#progressBox>div a:nth-of-type(3) {
+  right: 20px;
+}
+
+#progressBar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--highlight-color);
+  transition: 0.5s all ease-in-out;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  height: calc(100% - 100px);
+}
+
+.page div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#page1 {
+  height: calc(100% - 15px);
+  top: 15px;
+  justify-content: flex-start;
+}
+
+#page1 p {
+  margin: 10px;
+}
+
+.btn-next {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid grey;
+  outline: 0;
+  color: var(--highlight-color);
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn-back {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid grey;
+  outline: 0;
+  color: var(--highlight-color);
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.inputs {
+  background-color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  margin: 5px;
+  border-radius: 5px;
+  width: 180px;
+}

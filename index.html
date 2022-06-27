@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="progressBox" style="display: none;">
+        <div>
+          <a>
+            1
+          </a>
+          <a>
+            2
+          </a>
+          <a>
+            3
+          </a>
+          <div id="progressBar">
+
+          </div>
+        </div>
+      </div>
+      <div id="page1" class="page">
+        <h1>
+          Registration
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eveniet eos nemo natus beatae facere pariatur nostrum quasi sed et. Pariatur nobis magni harum officiis tempore? Perspiciatis ad non cupiditate!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eveniet eos nemo natus beatae facere pariatur nostrum quasi sed et. Pariatur nobis magni harum officiis tempore? Perspiciatis ad non cupiditate!
+        </p>
+        <button class="btn-next">
+          Start registration
+        </button>
+      </div>
+      <div id="page2" class="page" style="display: none;">
+        <h1>
+          Personal information
+        </h1>
+        <div>
+          <input placeholder="First name" type="text" class="inputs" required>
+          <input placeholder="Last name" type="text" class="inputs" required>
+        </div>
+        <div>
+          <input placeholder="Email" type="email" class="inputs" required>
+          <input placeholder="Mobile" type="tel" class="inputs" required>
+        </div>
+        <div>
+          <input placeholder="Age" type="number" class="inputs" required>
+          <select class="inputs" style="width: 192px;">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="divers">Divers</option>
+          </select>
+        </div>
+        <button class="btn-back">
+          Back
+        </button>
+        <button class="btn-next">
+          Next
+        </button>
+      </div>
+      <div id="page3" class="page" style="display: none;">
+        <h1>
+          Adress
+        </h1>
+        <div>
+          <input placeholder="Street" type="text" class="inputs" required>
+          <input placeholder="Nr." type="number" class="inputs" required>
+        </div>
+        <div>
+          <input placeholder="City" type="text" class="inputs" required>
+          <input placeholder="PLZ" type="number" class="inputs" required>
+        </div>
+        <button class="btn-back">
+          Back
+        </button>
+        <button class="btn-next">
+          Next
+        </button>
+      </div>
+      <div id="page4" class="page" style="display: none;">
+        <h1>
+          3.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in nulla repudiandae? Sed facilis expedita rerum numquam ut magni libero velit, saepe asperiores, iure vel in eligendi nostrum alias! Consequuntur!
+        </p>
+        <button class="btn-back">
+          Back
+        </button>
+        <button class="btn-next">
+          End registration
+        </button>
+      </div>
+      <div id="page5" class="page" style="display: none;">
+        <h1>
+          Registration done
+        </h1>
+      </div>
+    </main>
+  </body>
+</html>
