@@ -29,21 +29,33 @@ function checkValid() {
     case 1: isValid = true;
       page1Inputs.forEach(element => {
         if (!element.checkValidity()) {
-          isValid = false
+          isValid = false;
+          element.classList.add("error");
+        }
+        else {
+          element.classList = "inputs";
         }
       });
       return isValid;
     case 2: isValid = true;
       page2Inputs.forEach(element => {
         if (!element.checkValidity()) {
-          isValid = false
+          isValid = false;
+          element.classList.add("error");
+        }
+        else {
+          element.classList = "inputs";
         }
       });
       return isValid;
     case 3: isValid = true;
       page3Inputs.forEach(element => {
         if (!element.checkValidity()) {
-          isValid = false
+          isValid = false;
+          element.classList.add("error");
+        }
+        else {
+          element.classList = "inputs";
         }
       });
       return isValid;
