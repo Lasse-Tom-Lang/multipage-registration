@@ -24,3 +24,9 @@ app.get('/style.css', (req, res) => {
   res.write(fs.readFileSync("client/style.css"));
   res.end();
 })
+
+app.get("/saveData", (req, res) => {
+  data = JSON.parse(fs.readFileSync("data.json"));
+  data.data.push(req.query);
+  fs.writeFileSync("data.json", JSON.stringify(data));
+});

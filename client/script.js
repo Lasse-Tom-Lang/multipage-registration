@@ -83,5 +83,13 @@ function updatePages() {
 
   if (pageIndex == 4) { 
     progressBar.style.backgroundColor = "rgb(100, 255, 115)";
+
+    url = "/saveData";
+    inputs = document.querySelectorAll(".inputs");
+    for (i=0;i<inputs.length;i++) {
+      url += i==0?"?":"&";
+      url += inputs[i].name + "=" + inputs[i].value;
+    }
+    fetch(url);
   }
 }
