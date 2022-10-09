@@ -65,15 +65,15 @@ function checkValid() {
 function updatePages() {
 
   switch (pageIndex) {
-    case 0: progressBar.style.transform = "translateX(-100%)";
+    case 0: progressBar.style.width = "0%";
     break;
-    case 1: progressBar.style.transform = "translateX(calc(-100% + 41px))";
+    case 1: progressBar.style.width = "41px";
     break;
-    case 2: progressBar.style.transform = "translateX(-50%)";
+    case 2: progressBar.style.width = "50%";
     break;
-    case 3: progressBar.style.transform = "translateX(calc(0% - 41px))";
+    case 3: progressBar.style.width = "calc(100% - 41px)";
     break;
-    case 4: progressBar.style.transform = "translateX(0)";
+    case 4: progressBar.style.width = "100%";
   }
 
   pages.forEach(element => {

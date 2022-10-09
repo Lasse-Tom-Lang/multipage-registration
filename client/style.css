@@ -68,10 +68,12 @@ main {
 }
 
 #progressBar {
-  width: 100%;
+  width: 0%;
   height: 50px;
   background-color: var(--highlight-color);
-  transition: 0.5s transform ease-in-out;
+  transition: 0.5s width ease-in-out;
+  position: absolute;
+  left: 0;
 }
 
 .page {
